@@ -1,0 +1,73 @@
+$bgColor: #12161C
+
+*
+    margin: 0
+    padding: 0
+    font-family: 'Roboto', sans-serif
+    color: #fff
+.container
+    width: 1200px
+header
+    background: $bgColor
+    #header__logo 
+        img
+            width: 100%
+    #header__menu
+        .menu
+            padding-top: 23px
+            padding: 23px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            margin-right: auto
+            margin-left: auto
+            .menu__item
+                text-align: center
+                display: block
+                text-decoration: none
+                text-transform: uppercase
+            .menu__item:hover
+                cursor: pointer
+                transition: all ease 0.5s
+                color: #fcc
+    #header__user
+        .buttons
+            padding-top: 21px
+            padding-bottom: 21px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            justify-content: space-between
+            button
+                font-weight: bold
+                padding: 4px
+                font-size: 14px
+                text-transform: uppercase
+                width: 40%
+                display: block
+                border: solid 1px #fff
+                border-radius: 12px
+                background: #000
+            #button__login:hover
+                transition: all ease 1s
+                color: #000
+                background: yellow
+                -webkit-box-shadow: inset 0px 0px 22px 13px #FFFFFF
+                box-shadow: inset 0px 0px 22px 3px #FFFFFF
+            #button__register:hover
+                transition: all ease 1s
+                background: #00f
+                -webkit-box-shadow: inset 0px 0px 22px 13px #FFFFFF
+                box-shadow: inset 0px 0px 22px 3px #FFFFFF
+                
+#promo_buy
+    background: #000
+    padding-top: 30px
+    
