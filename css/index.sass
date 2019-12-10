@@ -69,35 +69,24 @@ header
                 box-shadow: inset 0px 0px 22px 3px #FFFFFF
                 
 #promo_buy
-    background: #000
-    padding-top: 80px //Не подтягиваются стили
+    background: url("../assets/images/promo_bg.jpg")
+    background-size: cover
+    padding-top: 60px
+    padding-bottom: 60px
+    box-shadow: inset -1px 11px 20px 2px rgba(18, 22, 28, 1);
     .form__buy
         h2
             text-transform: uppercase
             font-weight: bold
+            margin-bottom: 30px
         input
-          text-align: right
-        .input-group-btn-vertical 
-          position: relative
-          white-space: nowrap
-          width: 2%
-          vertical-align: middle
-          display: table-cell
-        .input-group-btn-vertical > .btn 
-          display: block
-          float: none
-          width: 100%
-          max-width: 100%
-          padding: 8px
-          margin-left: -1px
-          position: relative
-          border-radius: 0
-        .input-group-btn-vertical > .btn:first-child 
-          border-top-right-radius: 4px
-        .input-group-btn-vertical > .btn:last-child 
-          margin-top: -2px
-          border-bottom-right-radius: 4px
-        .input-group-btn-vertical i 
-          position: absolute
-          top: 0
-          left: 4px
+            text-align: right
+            margin-bottom: 20px
+            width: 300px
+    .banner_promo
+        img
+            width: 100%
+            box-shadow: 5px 5px 15px 5px #000000
+        img:hover
+            cursor: pointer;
+        
