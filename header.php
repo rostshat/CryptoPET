@@ -6,6 +6,8 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/pop-ups.js"></script>
 </head>
 <body>
     <header>
@@ -27,10 +29,33 @@
                         <button id="button__login">
                             Login
                         </button>
-                        <button id="button__register">
+                        <button id="button__register" onclick="javascript:PopUpRegShow()">
                             Register
                         </button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Registration Form -->
+        <div class="popup" id="popup_register">
+            <div class="popup-content">
+                <a href="javascript:PopUpRegHide()">
+                    <i class="fa fa-times"></i>
+                </a>
+                <div class="content">
+                    <form action="">
+                        <h4>Login</h4>
+                        <input type="text" id="register_login" required>
+                        <h4>Password</h4>
+                        <input type="password" id="register_password" required>
+                        <h4>Re-Password</h4>
+                        <input type="password" id="register_password_verify" required>
+                        <div class="registratin-accept__block">
+                            <input type="checkbox" id="registration_accept" required>
+                            <span>I submit my regisstration</span>
+                        </div>
+                        <button onclick="javascript:checkPassword(register_password, register_password_verify)">Register</button>
+                    </form>
                 </div>
             </div>
         </div>
