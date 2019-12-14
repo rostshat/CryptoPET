@@ -5,8 +5,10 @@ $(document).ready(function(){
 function PopUpRegShow(){
     $("#popup_register").show();
 }
-function PopUpRegHide(){
+
+function sentPupUpRegisterForm(){
     $("#popup_register").hide();
+    
 }
 
 /*PASSWORD-CHECK*/
@@ -17,5 +19,13 @@ function PopUpRegHide(){
         var verifyPass = $(#{verifyPassword});
 
         (firstPass == verifyPass) ? 
+    }
+    
+    function checkPassword (var passwordID, var verifyPasswordID)
+    {
+        var userPass = getElementBiId(passwordID);
+        var verifyPass = getElementBiId(verifyPasswordID);
+
+        (userPass == verifyPass) ?  sentPupUpRegisterForm() : 
     }
 */
