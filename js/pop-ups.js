@@ -8,7 +8,7 @@ function PopUpRegShow(){
 
 function sentPupUpRegisterForm(){
     $("#popup_register").hide();
-    
+
 }
 
 /*PASSWORD-CHECK*/
@@ -18,14 +18,11 @@ function sentPupUpRegisterForm(){
         var firstPass = $(#{password});
         var verifyPass = $(#{verifyPassword});
 
-        (firstPass == verifyPass) ? 
-    }
-    
-    function checkPassword (var passwordID, var verifyPasswordID)
-    {
-        var userPass = getElementBiId(passwordID);
-        var verifyPass = getElementBiId(verifyPasswordID);
-
-        (userPass == verifyPass) ?  sentPupUpRegisterForm() : 
+        (firstPass == verifyPass) ?
     }
 */
+function checkPassword (var passwordID, var verifyPasswordID){
+  var userPass = getElementBiId(passwordID);
+  var verifyPass = getElementBiId(verifyPasswordID);
+  //(userPass == verifyPass) ?  sentPupUpRegisterForm() :
+}

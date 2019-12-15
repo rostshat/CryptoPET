@@ -1,13 +1,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Crypto Exchange</title>
-    
+
     <link rel="stylesheet" href="css/index.css">
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<<<<<<< HEAD
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
     <script src="js/pop-ups.js"></script>
+=======
+>>>>>>> parent of c47689d... Register-POP-UP
 </head>
 <body>
     <header>
@@ -29,13 +33,14 @@
                         <button id="button__login">
                             Login
                         </button>
-                        <button id="button__register" onclick="javascript:PopUpRegShow()">
+                        <button id="button__register">
                             Register
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
         <!-- Registration Form -->
         <div class="popup" id="popup_register">
             <div class="popup-content">
@@ -59,4 +64,22 @@
                 </div>
             </div>
         </div>
+        <div class="popup" id="popup_login">
+            <div class="popup-content">
+                <a href="javascript:PopUpLogHide()">
+                    <i class="fa fa-times"></i>
+                </a>
+                <div class="content">
+                    <form action="">
+                        <h4>Login</h4>
+                        <input type="text" id="login_login" required>
+                        <h4>Password</h4>
+                        <input type="password" id="login_password" required>
+                        <button onclick="">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+=======
+>>>>>>> parent of c47689d... Register-POP-UP
     </header>

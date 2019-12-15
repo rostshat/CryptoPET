@@ -18,11 +18,8 @@
                                 <img src="assets/images/banner_phone.png" alt="Banner" class="banner">
             </div>
             <div class="col-md-1">
-                
+
             </div>
         </div>
     </div>
 </section>
-
-<script src="https://use.fontawesome.com/1ddfb91e7f.js"></script>
-
