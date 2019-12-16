@@ -6,12 +6,6 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<<<<<<< HEAD
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-    <script src="js/pop-ups.js"></script>
-=======
->>>>>>> parent of c47689d... Register-POP-UP
 </head>
 <body>
     <header>
@@ -40,7 +34,6 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
         <!-- Registration Form -->
         <div class="popup" id="popup_register">
             <div class="popup-content">
@@ -80,6 +73,4 @@
                 </div>
             </div>
         </div>
-=======
->>>>>>> parent of c47689d... Register-POP-UP
     </header>
