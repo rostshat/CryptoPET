@@ -11,7 +11,6 @@
                     <input type="text" class="form-control" value="1" min="0.0001" max="10">
                     
                     <p class="help-block">Min 0.0001 - Max 10</p>
-                    <button id="buy_BTC_button">BUY</button>
                 </form>
             </div>
             <div class="col-md-5 col-sm12 banner_promo">
