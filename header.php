@@ -6,8 +6,34 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+      /*POP-UP*/
+      $(document).ready(function(){
+          PopUpRegHide();
+          PopUpLogHide();
+      });
+
+      function PopUpRegShow(){
+          $("#popup_register").show();
+      }
+
+      function PopUpRegHide(){
+          $("#popup_register").hide();
+      }
+
+
+      function PopUpLogHide(){
+          $("#popup_login").hide();
+      }
+      function PopUpLogShow(){
+          $("#popup_login").hide();
+      }
+    </script>
+
     <header>
         <div class="container">
            <div class="row">
@@ -24,10 +50,10 @@
                 </div>
                 <div id="header__user" class="col-md-3">
                     <div class="buttons">
-                        <button id="button__login">
+                        <button id="button__login" onclick="javascript:PopUpLogShow()">
                             Login
                         </button>
-                        <button id="button__register">
+                        <button id="button__register" onclick="javascript:PopUpRegShow()">
                             Register
                         </button>
                     </div>
@@ -52,11 +78,12 @@
                             <input type="checkbox" id="registration_accept" required>
                             <span>I submit my regisstration</span>
                         </div>
-                        <button onclick="javascript:checkPassword(register_password, register_password_verify)">Register</button>
+                        <button onclick="javascript:PopUpRegHide()">Register</button>
                     </form>
                 </div>
             </div>
         </div>
+        <!-- Login Form -->
         <div class="popup" id="popup_login">
             <div class="popup-content">
                 <a href="javascript:PopUpLogHide()">
