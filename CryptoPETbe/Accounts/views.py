@@ -8,6 +8,8 @@ def RegAndLogin(request):
             accs = Accs()
             accs.login = request.REGISTER.get('reglogin')
             accs.password = request.REGISTER.get('regpass')
+            accs.USD = 0
+            accs.BTC = 0
             accs.save()
 
             html = "<html><body>Registration sucsessful!</body></html>"
