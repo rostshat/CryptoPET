@@ -67,13 +67,14 @@
                     <i class="fa fa-times"></i>
                 </a>
                 <div class="content">
-                    <form action="">
+                    <form action="" method="register"> <!-- DO NOT CHANGE THE METHOD OR NAMES! -->
+                        {% csrf_token %}
                         <h4>Login</h4>
-                        <input type="text" id="register_login" required>
+                        <input type="text" id="register_login" name="reglogin" required>
                         <h4>Password</h4>
-                        <input type="password" id="register_password" required>
+                        <input type="password" id="register_password" name="regpass" required>
                         <h4>Re-Password</h4>
-                        <input type="password" id="register_password_verify" required>
+                        <input type="password" id="register_password_verify" name="regpassv" required>
                         <div class="registratin-accept__block">
                             <input type="checkbox" id="registration_accept" required>
                             <span>I submit my regisstration</span>
@@ -90,11 +91,12 @@
                     <i class="fa fa-times"></i>
                 </a>
                 <div class="content">
-                    <form action="">
+                    <form action="" method="login"> <!-- DO NOT CHANGE THE METHOD OR NAMES! -->
+                        {% csrf_token %}
                         <h4>Login</h4>
-                        <input type="text" id="login_login" required>
+                        <input type="text" id="login_login" name="loginlogin" required>
                         <h4>Password</h4>
-                        <input type="password" id="login_password" required>
+                        <input type="password" id="login_password" name="loginpass" required>
                         <button onclick="">Register</button>
                     </form>
                 </div>
