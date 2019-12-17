@@ -1,8 +1,17 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from .models import Accs
 
-def registration(request):
-    pass
+def RegAndLogin(request):
+    if request.method == "POST":
+        if request.REGISTER.get('regpass') == request.REGISTER.get('regpassv'):
+            accs = Accs()
+            accs.login = request.REGISTER.get('reglogin')
+            accs.password = request.REGISTER.get('regpass')
+            accs.save()
 
-def login(request):
-    pass
+            html = "<html><body>Registration sucsessful!</body></html>"
+            return HttpResponse(html)
+
+        else:
+            pass
