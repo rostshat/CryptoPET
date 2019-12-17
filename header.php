@@ -67,7 +67,7 @@
                     <i class="fa fa-times"></i>
                 </a>
                 <div class="content">
-                    <form action="" method="register"> <!-- DO NOT CHANGE THE METHOD OR NAMES! -->
+                    <form action="" method="post"> <!-- DO NOT CHANGE THE METHOD OR NAMES! -->
                         {% csrf_token %}
                         <h4>Login</h4>
                         <input type="text" id="register_login" name="reglogin" required>
@@ -91,7 +91,7 @@
                     <i class="fa fa-times"></i>
                 </a>
                 <div class="content">
-                    <form action="" method="login"> <!-- DO NOT CHANGE THE METHOD OR NAMES! -->
+                    <form action="" method="get"> <!-- DO NOT CHANGE THE METHOD OR NAMES! -->
                         {% csrf_token %}
                         <h4>Login</h4>
                         <input type="text" id="login_login" name="loginlogin" required>
