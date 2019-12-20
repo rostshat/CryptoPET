@@ -19,8 +19,9 @@ def RegAndLogin(request):
                 return HttpResponse('Error!')
 
         elif request.POST.get('loginlogin') and request.POST.get('loginpass'):
-                accs = Accs()
-                if accs.objects.get(login=request.POST.get('loginlogin')) == request.POST.get('loginlogin') and accs.objects.get(login=request.POST.get('loginpass')) == request.POST.get('loginpass'):
+                login = request.POST.get('loginlogin')
+                password = request.POST.get('loginpass')
+                if Accs.objects.filter(login=login).exists() and Accs.objects.filter(password=password).exists():
                     HttpResponse("Authorisation sucsessful!")
         
         else:
