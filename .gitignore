@@ -124,3 +124,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 *.rar
+CryptoPETbe/.vscode/settings.json
+CryptoPETbe/.vscode/launch.json
